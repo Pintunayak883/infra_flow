@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1e4ed8;
+  --color-primary-foreground: #f8fafc;
+  --color-secondary: #64748b;
+  --color-success: #22c55e;
+  --color-warning: #f97316;
+  --color-danger: #ef4444;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-900 antialiased overflow-x-hidden;
+    font-family: 'Inter', 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-neutral-900 tracking-tight;
+  }
+
+  a {
+    @apply text-primary-500 transition hover:text-primary-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-200;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply mx-auto max-w-6xl px-gutter py-section lg:px-0;
+  }
+
+  .card {
+    @apply rounded-[24px] bg-surface shadow-card p-6;
+  }
+
+  .card-muted {
+    @apply rounded-[24px] bg-surface-muted border border-surface-border p-6;
+  }
+
+  .section-heading {
+    @apply text-sm uppercase tracking-[0.3em] text-secondary-500;
+  }
+
+  .screen-title {
+    @apply font-display text-3xl font-semibold text-neutral-900 sm:text-4xl;
+  }
+
+  .flow-grid {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-pill px-3 py-1 text-xs font-semibold uppercase;
+  }
+
+  .pill-success {
+    @apply pill bg-success/10 text-success-600;
+  }
+
+  .pill-warning {
+    @apply pill bg-warning/10 text-warning-600;
+  }
+
+  .pill-danger {
+    @apply pill bg-danger/10 text-danger-600;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-200 focus-visible:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .grid-pane {
+    @apply grid gap-6 md:grid-cols-[minmax(0,_1.2fr)_minmax(0,_1fr)];
+  }
+
+  .stat-value {
+    @apply text-4xl font-semibold text-neutral-900;
+  }
+
+  .stat-label {
+    @apply text-sm uppercase tracking-wide text-secondary-500;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 40%, #ffffff 100%);
+}

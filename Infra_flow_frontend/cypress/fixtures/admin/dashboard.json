@@ -1,0 +1,37 @@
+{
+  "totals": {
+    "total": 10,
+    "pending": 4,
+    "completed": 5,
+    "inProgress": 1
+  },
+  "complaintsByCategory": {
+    "electrical": 4,
+    "plumbing": 3,
+    "network": 3
+  },
+  "complaintsPerMonth": [
+    { "month": "Jan", "count": 4 },
+    { "month": "Feb", "count": 6 }
+  ],
+  "workerWorkload": [
+    {
+      "workerId": "worker-100",
+      "name": "Riya",
+      "availability": "online",
+      "currentLoad": 2,
+      "maxLoad": 4
+    }
+  ],
+  "assetRepairStats": [
+    {
+      "assetId": "pump-1",
+      "name": "Pump",
+      "repairsLast30Days": 4,
+      "location": "Block A",
+      "assetType": "plumbing",
+      "downtimeHours": 12,
+      "lastRepairDate": "2024-02-15"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "complaints": [
+    {
+      "_id": "cmp-201",
+      "ticketId": "CMP-201",
+      "roomNumber": "LAB-A",
+      "title": "Projector flicker",
+      "description": "Projector keeps restarting",
+      "category": "equipment",
+      "priority": "high",
+      "status": "pending"
+    }
+  ]
+}

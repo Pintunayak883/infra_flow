@@ -1,0 +1,8 @@
+{
+  "message": "Complaint submitted successfully.",
+  "complaint": {
+    "_id": "cmp-front-1",
+    "ticketId": "CMP-1001",
+    "status": "pending"
+  }
+}

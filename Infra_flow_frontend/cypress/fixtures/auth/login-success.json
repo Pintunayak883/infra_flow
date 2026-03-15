@@ -1,0 +1,10 @@
+{
+  "accessToken": "test-token",
+  "user": {
+    "id": "user-1",
+    "name": "Jordan",
+    "email": "jordan@campus.edu",
+    "role": "student",
+    "rollNumber": "ME-21-001"
+  }
+}
